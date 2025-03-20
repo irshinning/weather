@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>weather</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ weather.city }} 天气</h1>
+        <p>temperature:{{ weather.temperature }}°C</p>
+        <p>description:{{ weather.description }}</p>
+        <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="天气图标">
+    </div>
+</body>
+</html>
